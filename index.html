@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mango Tree | Botany Guide — Immaculate Conception Academy of Manila</title>
+
+  <!-- Google Fonts: Baloo 2 for headings, Inter for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================= -->
+  <!-- HEADER: back button + branding -->
+  <!-- ============================= -->
+  <header class="site-header">
+    <div class="site-header__inner">
+
+      <!-- BACK BUTTON: point this to your map page once it exists
+           (e.g. href="map.html" or href="index.html#mango-tree") -->
+      <a href="map.html" class="site-header__back">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M15 4L7 12L15 20" stroke="currentColor" stroke-width="2.4"
+                stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <span>Back to Map</span>
+      </a>
+
+      <!-- BRAND: logo + school name, kept together as one centered group -->
+      <div class="site-header__brand">
+        <!-- Placeholder emblem. Swap for your real logo:
+             <img src="logo.png" alt="School Logo" class="site-header__logo"> -->
+        <div class="site-header__logo" aria-hidden="true">
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 6C24 6 13 14 13 27C13 35 18 41 24 43C30 41 35 35 35 27C35 14 24 6 24 6Z" fill="#ffffff"/>
+            <path d="M24 12V40" stroke="#2f4a32" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+
+        <h1 class="site-header__title">Immaculate Conception Academy of Manila</h1>
+      </div>
+
+      <!-- Empty column, keeps the brand group visually centered.
+           A future nav link or icon could live here if ever needed. -->
+      <div aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <!-- ============================= -->
+  <!-- MAIN: plant marker card       -->
+  <!-- ============================= -->
+  <main class="page">
+
+    <!--
+      PLANT MARKER CARD
+      To add another plant/tree, copy this entire <article class="plant-marker">
+      block, paste it below the closing </article> tag, then edit the text
+      and list items inside your copy.
+    -->
+    <article class="plant-marker">
+
+      <!-- Plant name + scientific name -->
+      <div class="plant-marker__title-card">
+        <h2 class="plant-marker__name">Mango Tree</h2>
+        <p class="plant-marker__scientific">Mangifera indica</p>
+      </div>
+
+      <!-- QR box + Facts box, side by side -->
+      <div class="plant-marker__content">
+
+        <!-- QR CODE BOX
+             Replace the placeholder SVG with your real QR code:
+             <img src="qr-code.png" alt="QR code to interactive guide" class="qr-placeholder"> -->
+        <div class="info-box info-box--qr">
+          <div class="qr-placeholder" aria-hidden="true">
+            <svg viewBox="0 0 100 100">
+              <rect x="8" y="8" width="28" height="28" fill="currentColor"/>
+              <rect x="64" y="8" width="28" height="28" fill="currentColor"/>
+              <rect x="8" y="64" width="28" height="28" fill="currentColor"/>
+              <rect x="16" y="16" width="12" height="12" fill="var(--color-surface)"/>
+              <rect x="72" y="16" width="12" height="12" fill="var(--color-surface)"/>
+              <rect x="16" y="72" width="12" height="12" fill="var(--color-surface)"/>
+              <rect x="44" y="8" width="10" height="10" fill="currentColor"/>
+              <rect x="44" y="44" width="10" height="10" fill="currentColor"/>
+              <rect x="64" y="44" width="10" height="10" fill="currentColor"/>
+              <rect x="82" y="44" width="10" height="10" fill="currentColor"/>
+              <rect x="44" y="60" width="10" height="10" fill="currentColor"/>
+              <rect x="44" y="82" width="10" height="10" fill="currentColor"/>
+              <rect x="64" y="72" width="28" height="10" fill="currentColor"/>
+            </svg>
+          </div>
+          <p class="info-box__label">Scan for the Interactive Guide</p>
+        </div>
+
+        <!-- FACTS BOX -->
+        <div class="info-box info-box--facts">
+          <h3 class="info-box__title">Photosynthesis Process</h3>
+          <ul class="info-box__list">
+            <li>Uses the C3 photosynthetic pathway for carbon fixation.</li>
+            <li>High chlorophyll density supports rapid biomass growth.</li>
+            <li>Stomata regulate water loss and CO2 intake during daylight.</li>
+          </ul>
+        </div>
+
+      </div>
+    </article>
+
+  </main>
+
+  <!-- ============================= -->
+  <!-- FOOTER: guide link + location -->
+  <!-- ============================= -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__guide">
+        Interactive Guide: <a href="https://map.icamanila.edu.ph/botany">map.icamanila.edu.ph/botany</a>
+      </p>
+      <p class="site-footer__location">Location: Main Courtyard</p>
+    </div>
+  </footer>
+
+</body>
+</html>
